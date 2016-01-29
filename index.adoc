@@ -73,7 +73,6 @@ El uso de sistemas de control de versiones como Git en docencia permite que los 
 * Hora: 10-11h
 * Lugar: Aula 7 de Informática
 
-Inscríbete en https://docs.google.com/forms/d/12YRaIGd5ZMmyaLSa66cAJIExuAOBJrbCzTRUFDHIW60/viewform[este enlace]
 
 === Jenkins
 
@@ -83,8 +82,6 @@ Sistema de integración continua open source que automatiza el proceso de constr
 * Fecha: 8 de febrero
 * Hora: 13-14h
 * Lugar: Aula 7 de Informática
-
-Inscríbete en https://docs.google.com/forms/d/1umAMV9aFS9J6hutBztg2kxl5UNLvSNjGii52b2fyzV4/viewform[este enlace]
 
 === Redmine
 
