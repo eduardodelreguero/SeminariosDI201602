@@ -1,0 +1,150 @@
+////
+NO CAMBIAR!!
+Codificación, idioma, tabla de contenidos, tipo de documento
+////
+:encoding: utf-8
+:lang: es
+:toc: right
+:toc-title: Tabla de contenidos
+:doctype: book
+:imagesdir: ./images
+
+
+
+
+////
+Nombre y título del trabajo
+////
+# Seminarios Departamento de Informática Febrero 2016
+Julio Barón, Joaquín Cañadas y Manolo Torres <jbaron@ual.es> <jjcanada@ual.es> <mtorres@ual.es>
+
+image::di.png[]
+
+// NO CAMBIAR!! (Entrar en modo no numerado de apartados)
+:numbered!: 
+
+
+[abstract]
+== Resumen
+////
+COLOCA A CONTINUACION EL RESUMEN
+////
+Son muchos los temas de interés que van apareciendo día a día. Algunos de ellos son estudiados por algunos de nosotros y creemos que podría ser interesante establecer un programa de seminarios para compartir este conocimiento y discutir cómo puede ser incorporado a nuestras tareas docentes y de investigación.
+
+En esta primera aproximación, se proponen una serie de seminarios de corta duración aprovechando el periodo de exámenes.
+
+
+////
+COLOCA A CONTINUACION LOS OBJETIVOS
+////
+.Objetivos
+* Compartir con nuestros compañeros herramientas y tecnologías de interés para tareas de docencia e investigación.
+* Establecer un foro periódico para el intercambio de conocimientos que vamos adquiriendo de forma individual.
+* Actualizar habilidades instrumentales.
+
+
+// Entrar en modo numerado de apartados
+:numbered:
+
+
+== Seminarios
+
+=== Asciidoc
+
+Asciidoc es un formato de documentos de texto que nos puede resultar muy útil para crear documentación, libros y presentaciones de nuestro material docente, ya sea en formato HTML, PDF o EPUB. Editoriales como O'Reilly y Maning lo usan para la creación de sus publicaciones.
+
+Este mismo documento que estás viendo ha sido creado en Asciidoc. En http://bdlsi.ual.es/asciidoc/asciidoc-di-books/samples/MongoDBJava.html[este enlace] puedes ver un ejemplo un poco más elaborado de lo que se puede conseguir con no demasiado esfuerzo. 
+
+* Ponentes: Manolo Torres y Julio Barón.
+* Fecha: 2 de Febrero
+* Hora: 10-11h
+* Lugar: Aula 7 de Informática
+
+=== Git
+
+Git es el sistema de control de versiones distribuido más usado en la actualidad. Git es open source y en nuestro contexto puede ser una herramienta de gran utilidad en todas aquellas asignaturas y prácticas de investigación en las que trabajemos con código fuente o archivos de texto plano. Con un sistema de control de versiones como Git podemos tener localmente, sin necesidad de un servidor externo, soporte y control sobre cada una de las versiones por las que van evolucionando nuestros archivos. Además, nos permite trabajar de forma colaborativa con compañeros y alumnos.
+
+En este seminario se verá también cómo usar Git para dar soporte a la docencia desde dos puntos de vista: desde el lado del profesor, en el que Git facilita la entrega de material docente a los estudiantes, así como el acceso al trabajo autónomo desarrollado por los estudiates; desde el lado de los estudiantes, a los que se les facilita la entrega del trabajo autónomo.
+
+El uso de sistemas de control de versiones como Git en docencia permite que los estudiantes se familiaricen con las técnicas de desarrollo y trabajo en equipo que posteriormente utilizarán en su carrera profesional.
+
+* Ponentes: Manolo Torres y Julio Barón.
+* Fecha: 3 de febrero
+* Hora: 10-11h
+* Lugar: Aula 7 de Informática
+
+Inscríbete en https://docs.google.com/forms/d/12YRaIGd5ZMmyaLSa66cAJIExuAOBJrbCzTRUFDHIW60/viewform[este enlace]
+
+=== Jenkins
+
+Sistema de integración continua open source que automatiza el proceso de construcción del software y ejecución de pruebas del software. Se presentará su aplicación al seguimiento (y evaluación) de las prácticas que los estudiantes suben a los repositorios SVN en la asignatura Introducción a la Programación, de 1º del Grado de Ingeniería Informática
+
+* Ponente: Joaquín Cañadas
+* Fecha: 8 de febrero
+* Hora: 13-14h
+* Lugar: Aula 7 de Informática
+
+Inscríbete en https://docs.google.com/forms/d/1umAMV9aFS9J6hutBztg2kxl5UNLvSNjGii52b2fyzV4/viewform[este enlace]
+
+=== Redmine
+
+Redmine es un sistema open source para la gestión de proyectos e incidencias. Con Redmine podemos gestionar y hacer el seguimiento de las tareas de cualquier proyecto de forma sencilla.
+
+En este seminario se verá cómo usar Redmine para dar soporte a la docencia. En este sentido, las asignaturas serán consideradas _Proyectos_, y el trabajo autónomo será considerado como _tareas_ del _Proyecto de cada asignatura_. Este enfoque permitirá que los estudiantes se familiaricen con las técnicas y herramientas de Gestión de proyectos que posteriormente utilizarán en su carrera profesional.
+
+Asimismo, y para todos que hayan asistido al seminario de Git o bien tengan conocimiento de Sistemas de control de versiones se verá cómo hacer que las correcciones realizadas por los profesores sobre las entregas de los estudiantes se conviertan de forma automática en nuevas tareas para los estudiantes, reduciendo el trabajo del profesor y facilitando el seguimiento de las asignaturas.
+
+* Ponente: Manolo Torres.
+* Fecha: 9 de febrero
+* Hora: 10-11h
+* Lugar: Aula 7 de Informática
+
+=== Slack
+
+Slack es un sistema de notificaciones que permite tener salas de chat (tipo Whatsapp) en las que se integran los comentarios de los profesores y estudiantes junto a la actividad realizada por las aplicaciones que configuremos. Además, la existencia de clientes tanto para escritorio, como para smartphones y tablets hace que podamos acceder fácilmente desde cualquier dispositivo y en cualquier momento a la actividad relacionada.
+
+En este seminario veremos cómo usar Slack como Sistema de notificaciones en docencia. En concreto, veremos cómo todas las notificaciones derivadas de la publicación de nuevos contenidos por parte de los profesores, nuevas entregas de trabajo autónomo y cualquier tarea realizada por los profesores o estudiantes serán comunicadas de forma automática a estudiantes y profesores al actualizar el contenido de un repositorio o al crear una tarea de la asignatura.
+
+* Ponente: Manolo Torres.
+* Fecha: 11 de febrero
+* Hora: 10-11h
+* Lugar: Aula 7 de Informática
+
+== Inscripción
+
+Inscríbete introduciendo tu nombre y los seminarios a los que asistirás en https://docs.google.com/forms/d/1umAMV9aFS9J6hutBztg2kxl5UNLvSNjGii52b2fyzV4/viewform[este formulario de inscripción]
+
+:numbered!:
+
+////
+
+En este enlace ($$$) puedes dejar tus sugerencias para nuevos seminarios.
+
+== JUnit
+
+* Ponente: 
+* Fecha: 5 de febrero
+* Duración: 2 horas
+
+== Maven
+
+Automatización de la construccion (build) y gestión de dependencias en Java
+
+* Ponente: Joaquín Cañadas
+* Fecha: 8 de febrero
+* Duración: 
+
+
+== Selenium
+
+Herramienta de pruebas para aplicaciones web
+
+* Ponente: Joaquín Cañadas
+* Fecha:
+* Duración: 
+
+////
+
+
+
+
