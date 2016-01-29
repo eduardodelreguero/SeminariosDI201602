@@ -76,7 +76,7 @@ El uso de sistemas de control de versiones como Git en docencia permite que los 
 
 === Jenkins
 
-Sistema de integración continua open source que automatiza el proceso de construcción del software y ejecución de pruebas del software. Se presentará su aplicación al seguimiento (y evaluación) de las prácticas que los estudiantes suben a los repositorios SVN en la asignatura Introducción a la Programación, de 1º del Grado de Ingeniería Informática
+Sistema de integración continua open source que automatiza el proceso de construcción del software y ejecución de pruebas del software. Se presentará su aplicación al seguimiento (y evaluación) de las prácticas que los estudiantes suben a los repositorios SVN en la asignatura Introducción a la Programación, de 1º del Grado de Ingeniería Informática, y su posible aplicación a otras asignaturas que usen los repositorios. 
 
 * Ponente: Joaquín Cañadas
 * Fecha: 8 de febrero
