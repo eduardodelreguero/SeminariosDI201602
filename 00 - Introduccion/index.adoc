@@ -1,0 +1,51 @@
+include::_settings_reveal.adoc[]
+
+=  Seminarios DI
+Compartir lo que aprendemos
+Febrero 2016
+
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Algunos nombres del momento
+
+image::logos.png[]
+
+== ¿Te reconoces?
+
+image::psicosis.jpg[]
+
+== ¿Y así?
+
+image::cabezaabajo.jpg[]
+
+== No te preocupes, hay solución
+
+image::piramide.jpg[]
+
+== Danacol, uno de vez en cuando
+
+image::danacol.jpg[]
+
+== Seremos otros
+
+image::felicidad.jpg[]
+
+== Seminarios DI
+
+Uno de vez en cuando
+
+Compartir lo que aprendemos
+
+== Chaaaan
+
+image:tamariz.jpg[]
+
+

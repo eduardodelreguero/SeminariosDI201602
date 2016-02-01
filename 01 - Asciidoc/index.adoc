@@ -1,0 +1,148 @@
+include::_settings_reveal.adoc[]
+
+= Asciidoc
+Sintaxis básica
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Cabecera del documento
+
+[source]
+----
+\include::_settings_reveal.adoc[]
+
+= Slideshow Name
+Author Name
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+----
+
+== Títulos
+
+```
+== Header Level 1
+
+Bla bla bla
+
+=== Header Level 2
+
+Bla bla bla
+
+==== Header Level 3
+
+Bla bla bla
+``` 
+
+== Resumen
+
+[source]
+----
+[abstract]
+
+El texto del abstract
+----
+
+== Código
+
+[source]
+ [source]
+ ----
+ try { 
+   Class.forName("com.mysql.jdbc.Driver"); 
+ } 
+ catch(ClassNotFoundException e) { 
+   System.out.println("Driver no encontrado"); 
+   System.exit(1); 
+ } 
+ ----
+----
+
+[source]
+----
+ try { 
+   Class.forName("com.mysql.jdbc.Driver"); 
+ } 
+ catch(ClassNotFoundException e) { 
+   System.out.println("Driver no encontrado"); 
+   System.exit(1); 
+ } 
+----
+== Tablas
+
+```
+[cols="1,2,3", options="header"] 
+.Using tables. **Caution: Numbers in header set the column width**
+|===
+|First
+|Second
+|Third
+
+|Item 1
+|Description 1
+|Extended description 1
+|===
+```
+
+[cols="1,2,3", options="header"] 
+.Using tables. **Caution: Numbers in header set the column width**
+|===
+|First
+|Second
+|Third
+
+|Item 1
+|Description 1
+|Extended description 1
+|===
+
+== Negrita, cursiva y `monospace`
+
+[source]
+----
+*Negrita*
+
+_Cursiva_
+
+`monospace`
+----
+
+== Imágenes
+
+[source]
+----
+image::di.png[title = "Images are stored in `images` folder"]
+
+image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]
+----
+
+== Listas no numeradas
+
+```
+* item 1
+** item 1.2
+* item 2
+```
+* item 1
+** item 1.2
+* item 2
+
+== Listas numeradas
+
+```
+. item 1
+.. item 1.1
+. item 2
+```
+
+. item 1
+.. item 1.1
+. item 2
