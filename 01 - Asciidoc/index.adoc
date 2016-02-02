@@ -1,6 +1,6 @@
 include::_settings_reveal.adoc[]
 
-= Asciidoc
+= AsciiDoc
 Seminarios DI Febrero 2016
 :encoding: utf-8
 :lang: es
@@ -12,11 +12,11 @@ GENERATE THE PRESENTATION WITH THIS COMMAND
 asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
 ////
 
-== Asciidoc ra-ra-rápido
+== AsciiDoc ra-ra-rápido
 
 image:rapido.jpg[]
 
-== Ejemplos Asciidoc
+== Ejemplos AsciiDoc
 
 http://bdlsi.ual.es/seminariosdi201602/[Enlace a Seminarios DI http://bdlsi.ual.es/seminariosdi201602/]
 
@@ -24,7 +24,7 @@ http://bdlsi.ual.es/asciidoc/asciidoc-di-books/samples/MongoDBJava.html[Enlace a
 
 http://bdlsi.ual.es/seminariosdi201602/ejemplo.html[Enlace a Ejemplo a desarrollar http://bdlsi.ual.es/seminariosdi201602/ejemplo.html]
 
-== Qué es Asciidoc
+== Qué es AsciiDoc
 
 [quote,http://www.methods.co.nz/asciidoc/]
 ____
@@ -194,6 +194,14 @@ image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]
 . item 1
 .. item 1.1
 . item 2
+
+== Referencia rápida
+
+* AsciiDoc Quick Reference
+** http://asciidoctor.org/docs/asciidoc-syntax-quick-reference[http://asciidoctor.org/docs/asciidoc-syntax-quick-reference]
+
+* AsciiDoc Cheat sheet
+** https://powerman.name/doc/asciidoc[https://powerman.name/doc/asciidoc]
 
 == Plantillas DI
 
