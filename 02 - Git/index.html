@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="author" content="Seminarios DI Febrero 2016"><title>Git</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="reveal.js/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="reveal.js/css/theme/di.css" id="theme"><link href="reveal.js/lib/css/zenburn.css" rel="stylesheet"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section><h1>Git</h1><p><small>Seminarios DI Febrero 2016</small></p></section><section id="_qué_es_git"><h2>Qué es Git</h2><div class="quoteblock"><blockquote><div class="paragraph"><p>Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p></div></blockquote><div class="attribution">&#8212; https://git-scm.com/</div></div></section>
+<section id="_configuración_local"><h2>Configuración local</h2><div class="listingblock"><div class="content"><pre class="highlight"><code>git config --global user.email "mtorres@ual.es"
+git config --global user.name "Manuel Torres Gil"</code></pre></div></div>
+<div class="paragraph"><p>Configuración almacenada en <code>~/.gitconfig</code></p></div></section>
+<section id="_configuración_remota_github"><h2>Configuración remota (GitHub)</h2><div class="ulist"><ul><li><p>Crear cuenta</p><div class="ulist"><ul><li><p>Criterio Username: <code>ual + loginUAL</code></p><div class="ulist"><ul><li><p>Ejemplos: <code>ualjbaron</code>, <code>ualjjcanada</code> <code>ualmtorres</code></p></li></ul></div></li></ul></div></li><li><p>Modificar Settings</p><div class="ulist"><ul><li><p>Profile: Cambiar <em>Company</em> y <em>Location</em></p></li><li><p>SSH Keys (Evitan introducir login y pass en cada <code>push</code>)</p></li></ul></div></li></ul></div></section>
+<section><section id="__no_tienes_ssh_key"><h2>¿No tienes SSH Key?</h2><div class="paragraph"><p><span class="image"><img src="./images/ssh.jpg" alt="ssh"></span></p></div></section><section id="_paso_1_crear_ssh_key"><h2>Paso 1. Crear SSH Key:</h2><div class="paragraph"><p><code>$ ssh-keygen</code></p></div>
+<div class="paragraph"><p>Esto genera dos archivos:</p></div>
+<div class="ulist"><ul><li><p>Clave privada: <code>id_rsa</code></p></li><li><p>Clave pública: <code>id_rsa.pub</code></p></li></ul></div></section><section id="_paso_2_actualizar_ssh_key_en_github"><h2>Paso 2. Actualizar SSH Key en GitHub</h2><div class="paragraph"><p>Copiar contenido <code>id_rsa.pub</code> en GitHub</p></div>
+<div class="paragraph"><p><code>$ cat ~/.ssh/id_rsa.pub</code></p></div></section></section>
+<section id="__code_git_init_code"><h2><code>git init</code></h2><div class="paragraph"><p>Crear repo local <strong>en carpeta de proyecto</strong></p></div>
+<div class="listingblock"><div class="content"><pre class="highlight"><code>$ git init
+
+&gt;&gt;&gt; Initialized empty Git repository in
+/home/clouduser/Documents/prueba/.git/</code></pre></div></div></section>
+<section id="__em_working_dir_em_em_staging_area_em_y_repo"><h2><em>Working dir</em>, <em>Staging Area</em> y Repo</h2><div class="paragraph"><p><span class="image"><img src="./images/stagingarea.svg" alt="stagingarea"></span></p></div></section>
+<section id="__code_git_clone_code"><h2><code>git clone</code></h2><div class="paragraph"><p>Clonar un repo remoto (<em>bare</em>) en nuestro equipo</p></div>
+<div class="paragraph"><p><span class="image"><img src="./images/clone.png" alt="clone"></span></p></div></section>
+<section id="_ejemplo"><h2>Ejemplo</h2><div class="olist arabic"><ol class="arabic"><li><p>Crear repo <code>prueba</code> en GitHub</p></li><li><p>Clonar repo remoto en equipo</p><div class="olist loweralpha"><ol class="loweralpha" type="a"><li><p><code>git clone <em>URL</em> <em>[folderName]</em></code></p></li></ol></div></li><li><p>Crear archivo <code>README.adoc</code></p></li></ol></div></section>
+<section id="_repositorios_git"><h2>Repositorios Git</h2><div class="paragraph"><p><span class="image"><img src="./images/addcommit.png" alt="addcommit"></span></p></div></section>
+<section id="__code_git_status_code"><h2><code>git status</code></h2><div class="paragraph"><p>Muestra las diferencias entre el <em>Working dir</em>, la <em>Staging Area</em> y el repo.</p></div>
+<div class="listingblock"><div class="content"><pre class="highlight"><code>$ git status
+
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+
+	README.adoc
+
+nothing added to commit but untracked files present
+    (use "git add" to track)</code></pre></div></div></section>
+<section id="__code_git_add_code"><h2><code>git add</code></h2><div class="paragraph"><p>Añadir de <em>Working dir</em> a <em>Staging area</em> (index)</p></div>
+<div class="ulist"><ul><li><p><code>git add <em>files</em></code></p></li><li><p>Ejemplos</p><div class="ulist"><ul><li><p><code>git add README.adoc</code></p></li><li><p><code>git add .</code></p></li><li><p><code>git add --all</code></p></li></ul></div></li></ul></div></section>
+<section id="__code_git_commit_code"><h2><code>git commit</code></h2><div class="paragraph"><p>Añadir de <em>Staging Area</em> a repo</p></div>
+<div class="ulist"><ul><li><p><code>git commit -m commitText</code></p></li><li><p>Ejemplo</p><div class="ulist"><ul><li><p><code>git commit -m "README.doc creado"</code></p></li></ul></div></li></ul></div></section>
+<section id="__code_git_push_code"><h2><code>git push</code></h2><div class="paragraph"><p>Enviar cambios a repo remoto</p></div>
+<div class="ulist"><ul><li><p><code>git push <em>remoto</em> <em>ramaLocal</em></code></p></li><li><p>Ejemplo</p><div class="ulist"><ul><li><p><code>git push origin master</code></p></li></ul></div></li></ul></div></section>
+<section id="_escenario_colaborativo"><h2>Escenario Colaborativo</h2><div class="paragraph"><p><span class="image"><img src="./images/colaboracion.png" alt="colaboracion"></span></p></div></section>
+<section id="__code_origin_code_y_code_upstream_code"><h2><code>origin</code> y <code>upstream</code></h2><div class="paragraph"><p><span class="image"><img src="./images/upstream.png" alt="upstream"></span></p></div></section>
+<section id="_otras_alternaticas_a_github"><h2>Otras alternaticas a GitHub</h2><div class="ulist"><ul><li><p>GitHub ofrece repos públicos</p></li><li><p>GitHub ofrece un plan de repos privados para docencia</p></li><li><p>BitBucket es otra alternativa (permite repos privados)</p></li><li><p>Diferencias</p><div class="ulist"><ul><li><p>GitHub: Limita el número de repos. Usuarios ilimitados</p></li><li><p>BitBucket: Limita el número de usuarios. Repos ilimitados</p></li></ul></div></li></ul></div></section>
+<section id="_gitlab_di"><h2>GitLab DI</h2><div class="ulist"><ul><li><p>Repos privados y recursos propios</p></li><li><p>Acceso vía LDAP DI</p></li></ul></div>
+<div class="paragraph"><p><span class="image"><img src="./images/gitlab.png" alt="gitlab"></span></p></div></section>
+<section id="_recursos"><h2>Recursos</h2><div class="ulist"><ul><li><p>Git Immersion (<a href="http://gitimmersion.com/" class="bare">http://gitimmersion.com/</a>)</p></li></ul></div></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: true,
+  // Push each slide change to the browser history
+  history: true,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: false,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: true,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'di',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'slide',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'default',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 1.5,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>

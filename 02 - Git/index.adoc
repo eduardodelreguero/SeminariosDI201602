@@ -1,0 +1,170 @@
+include::_settings_reveal.adoc[]
+
+= Git
+Seminarios DI Febrero 2016
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Qué es Git
+[quote,https://git-scm.com/]
+____
+Git is a distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+____
+
+== Configuración local
+
+```
+git config --global user.email "mtorres@ual.es"
+git config --global user.name "Manuel Torres Gil"
+```
+
+Configuración almacenada en `~/.gitconfig`
+
+== Configuración remota (GitHub)
+
+* Crear cuenta 
+** Criterio Username: `ual + loginUAL` 
+*** Ejemplos: `ualjbaron`, `ualjjcanada` `ualmtorres`
+* Modificar Settings
+** Profile: Cambiar _Company_ y _Location_
+** SSH Keys (Evitan introducir login y pass en cada `push`)
+
+== ¿No tienes SSH Key?
+
+image:ssh.jpg[]
+
+=== Paso 1. Crear SSH Key:
+
+`$ ssh-keygen`
+
+Esto genera dos archivos:
+
+* Clave privada: `id_rsa`
+* Clave pública: `id_rsa.pub`
+
+=== Paso 2. Actualizar SSH Key en GitHub
+
+Copiar contenido `id_rsa.pub` en GitHub
+
+`$ cat ~/.ssh/id_rsa.pub`
+
+== `git init`
+
+Crear repo local *en carpeta de proyecto*
+
+```
+$ git init
+
+>>> Initialized empty Git repository in
+/home/clouduser/Documents/prueba/.git/
+```
+
+== _Working dir_, _Staging Area_ y Repo
+
+image:stagingarea.svg[]
+
+== `git clone`
+
+Clonar un repo remoto (_bare_) en nuestro equipo
+
+image:clone.png[]
+
+== Ejemplo
+
+. Crear repo `prueba` en GitHub
+. Clonar repo remoto en equipo
+.. `git clone _URL_ _[folderName]_`
+. Crear archivo `README.adoc`
+
+== Repositorios Git
+
+image:addcommit.png[]
+
+== `git status`
+
+Muestra las diferencias entre el _Working dir_, la _Staging Area_ y el repo.
+
+[source]
+----
+$ git status
+
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.adoc
+
+nothing added to commit but untracked files present 
+    (use "git add" to track)
+----
+
+== `git add`
+
+Añadir de _Working dir_ a _Staging area_ (index)
+
+* `git add _files_`
+* Ejemplos
+** `git add README.adoc`
+** `git add .`
+** `git add --all`
+
+== `git commit`
+
+Añadir de _Staging Area_ a repo
+
+* `git commit -m commitText`
+* Ejemplo
+** `git commit -m "README.doc creado"`
+
+== `git push`
+
+Enviar cambios a repo remoto
+
+* `git push _remoto_ _ramaLocal_`
+* Ejemplo
+** `git push origin master`
+
+== Escenario Colaborativo
+
+image:colaboracion.png[]
+
+
+
+== `origin` y `upstream`
+
+image:upstream.png[]
+
+== Otras alternaticas a GitHub
+
+* GitHub ofrece repos públicos
+
+* GitHub ofrece un plan de repos privados para docencia
+
+* BitBucket es otra alternativa (permite repos privados)
+
+* Diferencias
+
+** GitHub: Limita el número de repos. Usuarios ilimitados
+** BitBucket: Limita el número de usuarios. Repos ilimitados
+
+== GitLab DI
+
+* Repos privados y recursos propios
+
+* Acceso vía LDAP DI
+
+image:gitlab.png[]
+
+== Recursos
+
+* Git Immersion (http://gitimmersion.com/)

@@ -203,6 +203,8 @@ image::http://asciidoctor.org/images/octocat.jpg[title = "External image"]
 * AsciiDoc Cheat sheet
 ** https://powerman.name/doc/asciidoc[https://powerman.name/doc/asciidoc]
 
+* Awesome AsciiDoctor Notebook[http://gofile.me/2bnwZ/HmWfbCKX]
+
 == Plantillas DI
 
 * Texto: `https://github.com/ualmtorres/asciidoc-di-books`
