@@ -1,0 +1,112 @@
+include::_settings_reveal.adoc[]
+
+= Redmine
+Seminarios DI Febrero 2016
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Qué es Redmine
+[quote,https://www.redmine.com/]
+____
+Redmine is a flexible project management web application.
+____
+
+== Redmine en Cloud-DI
+
+image::serviciosDI.png[]
+
+=== URLs Cloud-DI
+
+* Descripción Servicios Cloud-DI: http://edx.di.ual.es
+** Regístrate y sigue los videotutoriales
+* Acceso Servicios Cloud-DI: http://cloud.di.ual.es
+
+=== Redmine-DI
+
+* URL: http://redmine.di.ual.es
+* Acceso vía LDAP-DI
+* Acceso externo a la UAL vía VPN
+
+=== Proyectos Redmine-DI (now)
+
+* Cloud-DI (Gestión incidencias de Cloud-DI)
+** Acceso como proyecto Redmine
+** Acceso desde http://cloud.di.ual.es
+** Todos podéis crear una _issue_
+* Técnicos de laboratorio (Gestión de peticiones)
+** Acceso como proyecto Redmine
+
+=== Objetivo proyectos actuales
+
+* Lista de tareas pendientes
+* Asignación de tareas
+* Las tareas quedan documentadas
+* Evitar email para comunicación sobre tareas
+* Cualquiera se puede incorporar al proyecto
+
+== Y esto, ¿para qué?
+
+image::paraque.jpg[]
+
+=== Enfoque en docencia
+
+image::ylosabes.jpg[]
+
+=== Docencia como proyecto
+
+* Cada asignatura tiene su proyecto
+** Issues: Temas (sesiones), Trabajo autónomo, Entregas, Pruebas, ...
+* Cada alumno tiene su proyecto
+* Futuro: Posibilidad de propagar tareas de asignaturas a alumnos
+
+* Estructura Jerárquica
+* (Cursos) Asignaturas, Alumnos
+
+== Modo de uso
+
+* Mi Página
+* Combinar con notificaciones
+
+=== Mi Página
+
+image::mypage.png[title="Tareas asignadas, solicitadas e informadas"]
+
+=== Combinar con notificaciones
+
+image::redmine.png[]
+image::slack.png[]
+
+=== Issues
+
+Cada tarea a realizar es una _issue_
+
+image::issues.png[title="Ejemplo de Lista de issues"]
+
+=== Gannt
+
+image::gannt.png[title="Diagramas de Gannt"]
+
+=== Hoja de horas
+
+image::horas.png[title="Informe personalizado de tiempo dedicado"]
+
+=== Plugin Agile
+
+image:agile.png[title="Panel Agile"]
+
+=== Gráficos Burndown
+
+image::burndown.png[title="Mala gestión. Issues incorporadas sobre la marcha"]
+
+== Vamos al lío
+
+Demo
+
+image::chiquito.png[]
