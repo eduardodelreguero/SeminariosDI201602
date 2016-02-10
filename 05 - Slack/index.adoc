@@ -1,0 +1,107 @@
+include::_settings_reveal.adoc[]
+
+= Slack
+Seminarios DI Febrero 2016
+:encoding: utf-8
+:lang: es
+:numbered:
+:imagesdir: ./images
+
+//// 
+GENERATE THE PRESENTATION WITH THIS COMMAND
+asciidoctor -T asciidoctor-reveal.js/templates/slim/  slide.adoc
+////
+
+== Slack en un video
+
+video::9RJZMSsH7-g[youtube, width=800, height=500]
+
+== Qué es Slack
+
+[quote,https://slack.com/]
+____
+Slack is a **messaging app for teams**.
+____
+
+== Aprovechar las notificaciones
+
+* Objetivo: Reducir el email
+
+image::mailbox.jpg[]
+
+== Usos (Gestión)
+
+* Notificaciones Técnicos Laboratorio
+
+image::tecnicos.png[]
+
+== Usos (Gestión)
+
+* Notificaciones Cloud-DI
+
+image::clouddi.png[]
+
+== Usos (Docencia)
+
+* Notificaciones nuevas tareas (Redmine)
+* Notificaciones actualización repositorio (SVN, GitLab)
+* Notificaciones automatizaciones (Jenkins)
+* ...
+
+== Vamos al lío
+
+Demo (ualinformatica.slack.com)
+
+* Accesible para dominios:
+** ual.es
+** inlumine.ual.es
+
+image::chiquito.png[]
+
+=== 1. Comenzamos
+
+image::01-Inicio.png[]
+
+=== 2. Sign up
+
+image::02-signup.png[]
+
+=== 3. A mirar el email
+
+image::03-CheckEmail.png[]
+
+=== 4. Confirmar
+
+image::04-EmailConfirmation.png[]
+
+=== 5. Sign in
+
+image::05-signin.png[]
+
+=== 6. Elegir username (ual+loginUAL)
+
+image::06-WelcomeSlack.png[]
+
+=== 7. Primeros pasos en Slack
+
+image::07-ExploreSlack.png[]
+
+=== 8. Estamos dentro!!
+
+image::08-InsideSlack.png[]
+
+== Y además ...
+
+image::slack_api.png[]
+
+== En docencia (ualrepos.slack.com)
+
+image::ualrepos.png[]
+
+== Downloads
+
+* Desktop: Mac, Windows y Linux (Beta)
+* Mobile: iOS, Android, Windows Phone (Beta)
+* Web
+
+
