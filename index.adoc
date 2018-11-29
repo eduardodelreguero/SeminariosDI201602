@@ -60,6 +60,8 @@ Este mismo documento que estás viendo ha sido creado en Asciidoc. En http://bdl
 * Hora: 10-11h
 * Lugar: Aula 7 de Informática
 
+link:01Asciidoc/index.html[Seminario Asciidoc]
+
 === Git
 
 Git es el sistema de control de versiones distribuido más usado en la actualidad. Git es open source y en nuestro contexto puede ser una herramienta de gran utilidad en todas aquellas asignaturas y prácticas de investigación en las que trabajemos con código fuente o archivos de texto plano. Con un sistema de control de versiones como Git podemos tener localmente, sin necesidad de un servidor externo, soporte y control sobre cada una de las versiones por las que van evolucionando nuestros archivos. Además, nos permite trabajar de forma colaborativa con compañeros y alumnos.
@@ -73,6 +75,7 @@ El uso de sistemas de control de versiones como Git en docencia permite que los 
 * Hora: 10-11h
 * Lugar: Aula 7 de Informática
 
+link:02Git/index.html[Seminario Git]
 
 === Jenkins
 
@@ -82,6 +85,8 @@ Sistema de integración continua open source que automatiza el proceso de constr
 * Fecha: 8 de febrero
 * Hora: 13-14h
 * Lugar: Aula 7 de Informática
+
+link:03Jenkins/SeminariosDI201602-Jenkins.pdf[Seminario Jenkins]
 
 === Redmine
 
@@ -96,6 +101,8 @@ Asimismo, y para todos que hayan asistido al seminario de Git o bien tengan cono
 * Hora: 10-11h
 * Lugar: Aula 7 de Informática
 
+link:04Redmine/index.html[Seminario Redmine]
+
 === Slack
 
 Slack es un sistema de notificaciones que permite tener salas de chat (tipo Whatsapp) en las que se integran los comentarios de los profesores y estudiantes junto a la actividad realizada por las aplicaciones que configuremos. Además, la existencia de clientes tanto para escritorio, como para smartphones y tablets hace que podamos acceder fácilmente desde cualquier dispositivo y en cualquier momento a la actividad relacionada.
@@ -106,6 +113,8 @@ En este seminario veremos cómo usar Slack como Sistema de notificaciones en doc
 * Fecha: 11 de febrero
 * Hora: 10-11h
 * Lugar: Aula 7 de Informática
+
+link:05Slack/index.html[Seminario Slack]
 
 == Inscripción
 
